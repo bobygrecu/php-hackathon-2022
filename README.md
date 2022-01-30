@@ -14,46 +14,70 @@ You have estimated it takes 4 weeks to build this solution. You have 3 days. Goo
 ## Technical documentation
 ### Data and Domain model
 In this section, please describe the main entities you managed to identify, the relationships between them and how you mapped them in the database.
+Answer:
+First I created the 'users' table in which I made 4 columns, ie 'id', 'name', 'CNP' and 'created', in the created column I specified the date and time when the user was appointment.
+Then I created two tables 'appointment_pilates' and 'appointment_kangoojumps' where I specified in both tables the columns 'id', 'user_id' where the user id is written in the first table and 'time interval' the time interval that the user chooses .
 ### Application architecture
 In this section, please provide a brief overview of the design of your application and highlight the main components and the interaction between them.
+Answer:
+I did not create the application in specific design, based on functionality.
 ###  Implementation
 ##### Functionalities
 For each of the following functionalities, please tick the box if you implemented it and describe its input and output in your application:
 
-[x] Brew coffee \
-[ ] Create programme \
-[ ] Delete programme \
-[ ] Book a programme 
+[ ] Brew coffee \
+[x] Create programme \
+[x] Delete programme \
+[x] Update programme 
 
+Answer:
+In the 'AppointmentController.php' file I implemented the create update and delete appointment functions
 ##### Business rules
 Please highlight all the validations and mechanisms you identified as necessary in order to avoid inconsistent states and apply the business logic in your application.
+Answer:
+First of all the mechanism of connection and writing in the database, then of user insertion, the choice of the desired program, the time interval and its availability.
 
 ##### 3rd party libraries (if applicable)
 Please give a brief review of the 3rd party libraries you used and how/ why you've integrated them into your project.
+Answer:
+I used the Laravel Framework, which I modified and interpreted to create the application.
 
 ##### Environment
 Please fill in the following table with the technologies you used in order to work at your application. Feel free to add more rows if you want us to know about anything else you used.
 | Name | Choice |
 | ------ | ------ |
-| Operating system (OS) | e.g. Ubuntu 20.04 |
-| Database  | e.g. MySQL 8.0|
-| Web server| e.g. Nginx |
-| PHP | e.g. 7.0 |
-| IDE | e.g. PhpStorm |
+| Operating system (OS) | Windows 11 |
+| Database  | MySQL 5.7.31 |
+| Web server| Apache 2.4.46 |
+| PHP | 7.3.21 |
+| Framework | Laravel |
+| API platform | Postman 9.11.0 |
+| Other platform | DockerDesktop 4.4.4 |
 
 ### Testing
 In this section, please list the steps and/ or tools you've used in order to test the behaviour of your solution.
+Answer:
+I tested the application in Postman, adding the files created one by one.
 
 ## Feedback
 In this section, please let us know what is your opinion about this experience and how we can improve it:
 
 1. Have you ever been involved in a similar experience? If so, how was this one different?
+I have never been involved in a similar experience.
 2. Do you think this type of selection process is suitable for you?
+I like this type of selection because it makes the difference between candidates.
 3. What's your opinion about the complexity of the requirements?
+The requirements were of medium difficulty for a candidate with little experience in REST API, but unfortunately I have not developed an API or used Laravel.
 4. What did you enjoy the most?
+The idea of the application seems useful to me during this pandemic period.
 5. What was the most challenging part of this anti hackathon?
+Since I have never developed any API or REST API projects, this challenge has given me headaches in searching for information and documenting new things.
 6. Do you think the time limit was suitable for the requirements?
+The time limit was satisfactory.
 7. Did you find the resources you were sent on your email useful?
+Yes, because I had some time in advance to find out about the challenge.
 8. Is there anything you would like to improve to your current implementation?
+No, I think this form of recruitment is the most effective.
 9. What would you change regarding this anti hackathon?
-
+One thing I think should have been said before the candidacy, namely the specification of the type of technology approached, namely API. If I knew this challenge would be based on this, I probably wouldn't be a candidate because I haven't yet gained the knowledge to implement and create APIs. For now!
+It was a challenge from which I learned new things, I noticed my level and which side I should insist on professional development.
